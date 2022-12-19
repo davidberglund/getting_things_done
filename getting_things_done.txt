@@ -3,13 +3,16 @@ Stuff --> --> -->
 Is it actionable?
 
 - No?
-1. Eliminate
+1. Trash
 2. Incubate
 3. Reference (journal, coursework, recipes, documenation etc)
 
 - Yes?
-What is the next action?
+Can it be completed in one single step?
 1. 2 mins? Do it now!
-2. Longer?
-- Delegate
-- Defer (later, next ASAP, scheduled)
+2. Longer than 2 mins?
+- Delegate to someone else (or just put it away and wait for someone else to do it)
+- Defer (Add to next TODO, Schedule it)
+
+Multiple (actionable) steps required to complete the task?
+- Plan a project with measurable goal(s) and actionable steps
