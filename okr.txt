@@ -1,0 +1,139 @@
+OKRs (Objectives and Key Results eller Mål, Nyckelresultat och Uppgifter) är ett ramverk för att sätta och nå mål. Målet med ramverket är att få ett tydligt (samstämmigt) fokus, en engagerande utmaning och att framstegen är spårbara.
+
+Målet med OKRs på svenska:
+"Spårbara framsteg. Samstämmigt fokus på utmaningen!"
+
+Objectives: Mål
+Key Results: Nyckelresultat
+Initiatives: Uppgifter
+
+Mål, Nyckelresultat och Uppgifter
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+(Kolla koppling mellan OKRs och CFR - Conversations, Feedback, and Recognition performance review
+https://www.whatmatters.com/resources/difference-between-okr-cfr ) 
+
+Tips för att nå i mål:
+Brukar sättas kvartalsvis och ska inte vara för många.
+Granska och uppdatera mål regelbundet
+Sträva inte efter fler än 3-5 OKRs under en 3 månadersperiod
+Hitta en bra balans mellan aggressiva och nåbara mål.
+Ge dig själv ett pålitligt system för att spåra framsteg.
+Uppdatera framsteg regelbundet.
+Det hjälper att ha en mix av outputs/inputs
+
+OKRs används främst av företag och organisationer men kan också används för personliga mål.
+
+Några olika typer av OKRs:
+
+Hängiven OKR (committed)
+Fullt nåbara och bör kunna genomföras fullt ut. Ökar livskvaliteten.
+Exempel: Börja använda ett bättre planeringssystem innan månadens slut.
+
+Ambitiösa OKR (aspirational)
+Dessa ska kännas lite för ambitiösa för att lyckas med. Och de ska inspirera till krafttag. Du når troligtvis inte i mål vid första försöket. Men låt målet vara kvar tills du lyckats, oavsett hur lång tid det tar.
+Exempel: Bli självförsörjande på el i Hjulsjö.
+
+Personlig OKR
+Mål för att bli lyckligare och mer tillfredsställd med vad du har åstadkommit. Ex. genom att engagera sig i något nytt som känns riktigt meningsfullt. 
+Exempel: Ta fram en plan för att installera solpaneler och batteri på snickarboden i Hjulsjö innan sommaren 2022.
+
+Ekonomisk OKR
+Ska vara nåbara och utmana till att ta smartare ekonomiska beslut. Även om du är tungt skuldsatt kan du ta tag i detta mål ett steg i taget.
+Exempel:
+Mål: Spara ihop till ett FUCK OFF-konto inom 6 månader.
+Nyckelresultat: Starta en automatisk överföring till sparkonto och öka den X kr varje månad. Sluta lägga X kr på onödiga utgifter varje månad.
+
+
+Aspire and inspire: Teams establish their best possible results in a given quarter, focus efforts on great outcomes, and use retros to learn and iterate.
+
+Outcome focus: Quarterly key results provide clarity on where value is created. This helps teams and the organization to drive business impacts faster.
+
+Global and local: Teams localize OKRs into their nouns, verbs, and numbers that enrich OKRs with the team's expertise and insights.
+
+Transparent: OKRs, alignment, and progress are visible to everyone with OKR software, simplifying collaboration and making good decisions faster.
+
+Focus
+Alignment
+Commitment
+Tracking
+Stretching
+
+Focus: Focus is the first benefit of OKRs because when you set OKRs, you are limited in the number of them. There can be more than one objective, but always less than seven. Fewer is better. Every objective should fit on one line. As for key results, you should have no more than five per objective. Because of this inherent necessity to limit the number of things to focus on, OKRs really force upfront choice-making. An OKR cycle should start with the question, What is most important for the next three (or six, or twelve) months? This time-bound query sets OKRs apart from other goal-setting systems because they bring to the surface the handful of initiatives that can make a real, immediate difference while deferring less urgent ones. By standing firmly behind a few top-line OKRs, leaders give their teams a compass and a baseline for assessment.
+Alignment: Once top-line objectives are set is when the real work begins. As they shift from planning OKRs to execution, managers, and contributors alike tie their day-to-day activities to the organization’s company-wide vision. The term for this linkage is alignment, and its value cannot be overstated. According to the Harvard Business Review, companies with highly-aligned employees are more than twice as likely to be top performers.
+
+Commitment: After focus and alignment come commitments. Commitments are OKRs that all have agreed will be achieved, and schedules and resources will be adjusted to ensure that they are delivered. Tracking these commitments is done transparently. Each team member must create very clear signals for everyone that they are working towards their OKRs. Whether this is done through a Google Sheet or an OKR software tracking tool like BetterWorks, sharing OKR progress on all-hand slides every single month, or printing them out and posting them all over the office walls to say you now know what you’re striving for and if you’re hitting it or not, it doesn’t matter as long as there is alignment and transparency
+
+Tracking: Tracking OKRs from output to outcome is why management by objectives is so popular with top-tier companies. Every OKR should be able to be tracked via the metrics established when they were written. And while OKRs don’t require daily tracking, regular check-ups—preferably weekly—are essential to prevent slippage. Having these reference points to grade your current OKRs is the long term magic of them on the individual level. Are you on track to meet this objective or not? Why or why not?
+
+Stretching: “Stretching” is last but not least. As John Doerr says, “Larry Page of Google is the high priest of 10x-ing everything, stretching further. He’ll say, ‘I’d rather have the objective be to go to Mars, and if we fall short, we’ll get to the moon. This is how you make moonshots.’” OKRs inherently push organizations to strive further, to eke out a little more than what they thought was possible.
+
+Exempel på bra OKRs:
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+Expandera globalt
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Sälj för 100 miljoner. Nå 100% ökning i EMEA år efter år. Öka snittförsäljning med 30% genom uppsäljning.
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+Gör våra kunder glada
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Intervjua 20 kunder varje månad och få feedback.
+Öka kundlojalitet till 98%.
+Nå produktengagemang till 80% WAU (weekly active users). (DAU - daily active users,  MAU - monthly active users)
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+Gör våra medarbetare glada
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Fira små vinster för olika sorters framsteg varje vecka.
+Lansera en tvåvägs feedback-process.
+Uppnå [VÄRDE] för nöjd medarbetarindex.
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+
+Mål:
+- Var ska jag? Mål som inspirerar och visar vägen.
+Nyckelresultat:
+- Hur vet jag att jag kommer närmare målet? Framsteg måste vara kortfattade, specifika och mätbara! Måste rymmas inom målet.
+Uppgifter:
+- Vad behöver jag göra för att komma dit? Vilka konkreta uppgifter är nödvändiga för att nå framsteg mot målet?
+
+
+5 grundpelare för god kultur:
+Structured and clarity 
+- goals roles execution plans clear
+
+Psychological safety - can we take risks without feeling insecure or embarrassed
+
+Meaning, personally important for each one of us?
+
+Dependability - can we trust team to deliver on time?
+
+Does it matter? What's the impact of our workOKRs
