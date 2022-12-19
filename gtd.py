@@ -56,7 +56,7 @@ match eisenhower:
                                 eisenhower = input("Plan a project and specify goal(s) and each actionable task. Start planning now?").upper()
                                 match eisenhower:
                                     case "YES":
-                                        print("Ok, let's start planning task:")
+                                        print("Ok, let's start planning this task as a project:")
                                         print(task)
                                         exit()
                                     case "NO":
@@ -64,42 +64,26 @@ match eisenhower:
                                         print(task)
                                         exit()
                     case "NO":
-                        #Not actionable - No? 1. Trash 2. Incubate 3. Reference (journal, coursework, recipes, documenation etc)
-                        print("")
-                        exit()
-
-                        eisenhower = input("Completed in 2 mins?").upper()
+                        eisenhower = input("Trash it?").upper()
                         match eisenhower:
                             case "YES":
-                                print("Do it now!")
+                                print("Awesome! Let's trash this task:")
+                                print(task)
                                 exit()
                             case "NO":
-                                print("Schedule it!")
-                                exit()
-                print("Do it now!")
-                exit()
-            case "NO":
-                print("Schedule it!")
-                exit()
-
-'''
-Multiple steps?
-- Plan a project with measurable goal(s) and actionable steps
-
-Stuff --> --> -->
-
-Is it actionable?
-
-- No?
-1. Trash
-2. Incubate
-3. Reference (journal, coursework, recipes, documenation etc)
-
-- Yes?
-Can it be completed in one single step?
-1. 2 mins? Do it now!
-2. Longer than 2 mins?
-- Delegate to someone else (or just put it away and wait for someone else to do it)
-- Defer (Add to next TODO, Schedule it)
-
-'''
+                                eisenhower = input("Incubate? I.e. develop idea further.").upper()
+                                match eisenhower:
+                                    case "YES":
+                                        eisenhower = input("Start incubating/developing this idea further right now?").upper()
+                                        match eisenhower:
+                                            case "YES":
+                                                print("Have fun developing this idea now! See ya.")
+                                                print(task)
+                                                exit()
+                                            case "NO":
+                                                print(task)
+                                                exit()
+                                    case "NO":
+                                        eisenhower = input("Then you should instead document, blog or in some other way put this so that it can be referenced in the future. Here's the task again:").upper()
+                                            print(task)
+                                            exit()
