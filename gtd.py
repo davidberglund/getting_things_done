@@ -44,7 +44,7 @@ match eisenhower:
                                                 eisenhower = input("Do it yourself?").upper()
                                                 match eisenhower:
                                                     case "YES":
-                                                        print("Schedule this now:")
+                                                        print("Add this to TODO (ASAP) _or_ schedule it:")
                                                         print(task)
                                                         exit()
                                                     case "NO":
@@ -52,21 +52,20 @@ match eisenhower:
                                                         print(task)
                                                         exit()
                             case "NO":
-                            #Multi step task
-                                print("...")
-                                exit()
-
-'''
-2. Longer than 2 mins?
--(or just put it away and wait for someone else to do it)
-- Defer (Add to next TODO, Schedule it)
-
-Multiple steps?
-- Plan a project with measurable goal(s) and actionable steps
-                        print("Do it now!")
-                        exit()
+                                #Multi step task
+                                eisenhower = input("Plan a project and specify goal(s) and each actionable task. Start planning now?").upper()
+                                match eisenhower:
+                                    case "YES":
+                                        print("Ok, let's start planning task:")
+                                        print(task)
+                                        exit()
+                                    case "NO":
+                                        print("Add project planning of this task to TODO (schedule):")
+                                        print(task)
+                                        exit()
                     case "NO":
-                        print("Schedule it!")
+                        #Not actionable - No? 1. Trash 2. Incubate 3. Reference (journal, coursework, recipes, documenation etc)
+                        print("")
                         exit()
 
                         eisenhower = input("Completed in 2 mins?").upper()
@@ -77,15 +76,16 @@ Multiple steps?
                             case "NO":
                                 print("Schedule it!")
                                 exit()
-
-
-
                 print("Do it now!")
                 exit()
             case "NO":
                 print("Schedule it!")
                 exit()
+
 '''
+Multiple steps?
+- Plan a project with measurable goal(s) and actionable steps
+
 Stuff --> --> -->
 
 Is it actionable?
@@ -102,6 +102,4 @@ Can it be completed in one single step?
 - Delegate to someone else (or just put it away and wait for someone else to do it)
 - Defer (Add to next TODO, Schedule it)
 
-Multiple (actionable) steps required to complete the task?
-- Plan a project with measurable goal(s) and actionable steps
 '''
