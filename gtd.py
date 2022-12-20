@@ -95,7 +95,8 @@ match answer:
                                         print(task)
                                         exit()
                     case "NO":
-                        answer = input("""Trash it?""").upper()
+                        answer = input("""Trash it?
+""").upper()
                         match answer:
                             case "YES":
                                 print("Awesome! Let's trash this task:")
