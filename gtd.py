@@ -85,7 +85,7 @@ match eisenhower:
                                                 print(task)
                                                 exit()
                                     case "NO":
-                                        eisenhower = input("Then you should instead document, blog or in some other way put this so that it can be referenced in the future. Here's the task again:").upper()
+                                        eisenhower = input("Then this sounds like a documentation task or something that should be available for reference in the future. Perhaps a blog post or presentation? Here's the task again:").upper()
                                         print(task)
                                         exit()
             case "NO":

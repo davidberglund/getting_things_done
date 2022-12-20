@@ -1,0 +1,15 @@
+Summary — Simple text without WikiFormatting.
+Description — The body of the ticket. Accepts WikiFormatting.
+Reporter — The author of the ticket.
+Type — The default types are defect, enhancement and task.
+Component — The project module or subsystem that this ticket concerns.
+Version — Version of the project that this ticket pertains to.
+Keywords — Useful for searching and report generation.
+Priority — The default priorities are trivial, minor, major, critical and blocker. A dropdown list when multiple priorities are defined.
+Severity — Similar to Priority, but the distinction may be useful for some projects. No severities are defined by default, therefore the field will be hidden from the ticket form.
+Milestone — Milestone in which the ticket will be resolved. A dropdown list.
+Assigned to/Owner — Principal person responsible for handling the issue.
+Cc — A comma-separated list of other users or email addresses to notify when changes are made to a ticket.
+Resolution — Reason why a ticket was closed. Default values are fixed, invalid, wontfix, duplicate, worksforme.
+Status — The statuses are defined in the ticket workflow. For the default workflow the statuses are new, assigned, accepted, closed and reopened.
+
