@@ -1,7 +1,9 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
 task = input("""What's the task?
 """)
-
+print("")
+print("Answer yes or no to the following questions.")
+print("")
 answer = input("""Is it important?
 """).upper()
 match answer:
@@ -10,8 +12,16 @@ match answer:
 """).upper()
         match answer:
             case "YES":
-                print("Delegate it!")
-                exit()
+                answer = input("""Do you have time to delegate it now?
+""").upper()
+                match answer:
+                    case "YES":
+                        print("Delegate it now! Or attempt to delegate and then put the issue on hold/awaiting response.")
+                        exit()
+                    case "NO":
+                        print("Create a TODO (ASAP) to delegate this immediately.")
+                        print(task)
+                        exit()
             case "NO":
                 print("Trash it now!")
                 exit()
@@ -57,9 +67,16 @@ match answer:
 """).upper()
                                                 match answer:
                                                     case "YES":
-                                                        print("Add this to TODO (ASAP) _or_ schedule it:")
-                                                        print(task)
-                                                        exit()
+                                                        answer = input("""Do you have time for it now?
+""").upper()
+                                                        match answer:
+                                                            case "YES":
+                                                                print("Do it now!")
+                                                                exit()
+                                                            case "NO":
+                                                                print("Add this to TODO (ASAP) _or_ schedule it:")
+                                                                print(task)
+                                                                exit()
                                                     case "NO":
                                                         print("Put this away somewhere and let someone else handle it whenever...")
                                                         print(task)
@@ -102,8 +119,17 @@ match answer:
                                                 exit()
                                     case "NO":
                                         print("Then this sounds like a documentation task or something that should be available for reference in the future. Perhaps a blog post or presentation? Here's the task again:")
-                                        print(task)
-                                        exit()
+                                        answer = input("""Agree? Start doing this work right now?
+""").upper()
+                                        match answer:
+                                            case "YES":
+                                                print("Awesome! Have fun.")
+                                                print(task)
+                                                exit()
+                                            case "NO":
+                                                print("Add a TODO: schedule time to work on this task.")
+                                                print(task)
+                                                exit()
             case "NO":
                 answer = input("""Is it actionable?
 """).upper()
