@@ -53,14 +53,14 @@ match eisenhower:
                                                         exit()
                             case "NO":
                                 #Multi step task
-                                eisenhower = input("Plan a project and specify goal(s) and each actionable task. Start planning now?").upper()
+                                eisenhower = input("Break this task down into actionable steps. Do that now?").upper()
                                 match eisenhower:
                                     case "YES":
-                                        print("Ok, let's start planning this task as a project:")
+                                        print("Ok, start breaking this task down now. Figure out if it's just a checklist of things to do or a bigger project that needs further planning:")
                                         print(task)
                                         exit()
                                     case "NO":
-                                        print("Add project planning of this task to TODO (schedule):")
+                                        print("Add a TODO to break this task down into actionable tasks (is it a project? Should it be scheduled?):")
                                         print(task)
                                         exit()
                     case "NO":
