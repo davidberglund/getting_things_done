@@ -1,38 +1,50 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
-task = input("What's the task?")
+task = input("""What's the task?
+""")
 
-eisenhower = input("Is it important?").upper()
-match eisenhower:
+answer = input("""Is it important?
+""").upper()
+match answer:
     case "NO":
-        eisenhower = input("Is it urgent?").upper()
-        match eisenhower:
+        answer = input("""Is it urgent?
+""").upper()
+        match answer:
             case "YES":
                 print("Delegate it!")
                 exit()
             case "NO":
                 print("Trash it now!")
                 exit()
+            case _:
+                print("Yes or No, please.")
+                exit()
     case "YES":
-        eisenhower = input("Is it urgent?").upper()
-        match eisenhower:
+        answer = input("""Is it urgent?
+""").upper()
+        match answer:
             case "YES":
-                eisenhower = input("Is it actionable?").upper()
-                match eisenhower:
+                answer = input("""Is it actionable?
+""").upper()
+                match answer:
                     case "YES":
-                        eisenhower = input("Single step task?").upper()
-                        match eisenhower:
+                        answer = input("""Single step task?
+""").upper()
+                        match answer:
                             case "YES":
-                                eisenhower = input("Done in 2 mins?").upper()
-                                match eisenhower:
+                                answer = input("""Done in 2 mins?
+""").upper()
+                                match answer:
                                     case "YES":
                                         print("Do it now!")
                                         exit()
                                     case "NO":
-                                        eisenhower = input("Delegate to someone else?").upper()
-                                        match eisenhower:
+                                        answer = input("""Delegate to someone else?
+""").upper()
+                                        match answer:
                                             case "YES":
-                                                eisenhower = input("Delegate now?").upper()
-                                                match eisenhower:
+                                                answer = input("""Delegate now?
+""").upper()
+                                                match answer:
                                                     case "YES":
                                                         print("Delegate it now!")
                                                         exit()
@@ -41,8 +53,9 @@ match eisenhower:
                                                         print(task)
                                                         exit()
                                             case "NO":
-                                                eisenhower = input("Do it yourself?").upper()
-                                                match eisenhower:
+                                                answer = input("""Do it yourself?
+""").upper()
+                                                match answer:
                                                     case "YES":
                                                         print("Add this to TODO (ASAP) _or_ schedule it:")
                                                         print(task)
@@ -53,8 +66,9 @@ match eisenhower:
                                                         exit()
                             case "NO":
                                 #Multi step task
-                                eisenhower = input("Break this task down into actionable steps. Do that now?").upper()
-                                match eisenhower:
+                                answer = input("""Break this task down into actionable steps. Do that now?
+""").upper()
+                                match answer:
                                     case "YES":
                                         print("Ok, start breaking this task down now. Figure out if it's just a checklist of things to do or a bigger project that needs further planning:")
                                         print(task)
@@ -64,18 +78,20 @@ match eisenhower:
                                         print(task)
                                         exit()
                     case "NO":
-                        eisenhower = input("Trash it?").upper()
-                        match eisenhower:
+                        answer = input("""Trash it?""").upper()
+                        match answer:
                             case "YES":
                                 print("Awesome! Let's trash this task:")
                                 print(task)
                                 exit()
                             case "NO":
-                                eisenhower = input("Incubate? I.e. develop idea further.").upper()
-                                match eisenhower:
+                                answer = input("""Incubate? I.e. develop idea further.
+""").upper()
+                                match answer:
                                     case "YES":
-                                        eisenhower = input("Start incubating/developing this idea further right now?").upper()
-                                        match eisenhower:
+                                        answer = input("""Start incubating/developing this idea further right now?
+""").upper()
+                                        match answer:
                                             case "YES":
                                                 print("Have fun developing this idea now! See ya.")
                                                 print(task)
@@ -85,19 +101,21 @@ match eisenhower:
                                                 print(task)
                                                 exit()
                                     case "NO":
-                                        eisenhower = input("Then this sounds like a documentation task or something that should be available for reference in the future. Perhaps a blog post or presentation? Here's the task again:").upper()
+                                        print("Then this sounds like a documentation task or something that should be available for reference in the future. Perhaps a blog post or presentation? Here's the task again:")
                                         print(task)
                                         exit()
             case "NO":
-                eisenhower = input("Is it actionable?").upper()
-                match eisenhower:
+                answer = input("""Is it actionable?
+""").upper()
+                match answer:
                     case "YES":
                         print("Put this task in the backlog. It's important but not urgent. Don't worry too much about the details right now (if it's a multi or single step task etc)")
                         print(task)
                         exit()
                     case "NO":
-                        eisenhower = input("Is it really that important or can we please trash it right now?").upper()
-                        match eisenhower:
+                        answer = input("""Is it really that important or can we please trash it right now?
+""").upper()
+                        match answer:
                             case "YES":
                                 print("Awesome! Let's trash this task:")
                                 print(task)
