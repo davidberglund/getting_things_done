@@ -95,32 +95,27 @@ match answer:
                                         print(task)
                                         exit()
                     case "NO":
-                        answer = input("""Trash it?
+                        answer = input("""Incubate? I.e. develop idea further.
 """).upper()
                         match answer:
                             case "YES":
-                                print("Awesome! Let's trash this task:")
-                                print(task)
-                                exit()
-                            case "NO":
-                                answer = input("""Incubate? I.e. develop idea further.
+                                answer = input("""Start incubating/developing this idea further right now?
 """).upper()
                                 match answer:
                                     case "YES":
-                                        answer = input("""Start incubating/developing this idea further right now?
-""").upper()
-                                        match answer:
-                                            case "YES":
-                                                print("Have fun developing this idea now! See ya.")
-                                                print(task)
-                                                exit()
-                                            case "NO":
-                                                print("Go ahead and schedule time for developing this idea further:")
-                                                print(task)
-                                                exit()
+                                        print("Have fun developing this idea now! See ya.")
+                                        print(task)
+                                        exit()
                                     case "NO":
-                                        print("Then this sounds like a documentation task or something that should be available for reference in the future. Perhaps a blog post or presentation? Here's the task again:")
-                                        answer = input("""Agree? Start doing this work right now?
+                                        print("Go ahead and schedule time for developing this idea further:")
+                                        print(task)
+                                        exit()
+                            case "NO":
+                                answer = input("""Is this a documentation task or something that should be available for reference in the future? Perhaps a blog post or presentation?")
+""").upper()
+                                match answer:
+                                    case "YES":
+                                        answer = input("""Do you have time to do this work right now?
 """).upper()
                                         match answer:
                                             case "YES":
@@ -128,8 +123,19 @@ match answer:
                                                 print(task)
                                                 exit()
                                             case "NO":
-                                                print("Add a TODO: schedule time to work on this task.")
+                                                print("Add a TODO (ASAP): schedule time to work on this task.")
                                                 print(task)
+                                                exit()
+                                    case "NO":
+                                        answer = input("""Are you sure this is worth your time? Trash it?
+""").upper()
+                                        match answer:
+                                            case "YES":
+                                                print("Awesome! Let's trash this task:")
+                                                print(task)
+                                                exit()
+                                            case "NO":
+                                                print("Ok, maybe this should be delegated or maybe time will tell what to do with this (if anything). Put it away somewhere where it doesn't bother you for now.")
                                                 exit()
             case "NO":
                 answer = input("""Is it actionable?
