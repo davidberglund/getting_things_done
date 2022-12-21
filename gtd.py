@@ -141,24 +141,20 @@ match answer:
                 answer = input("""Is it actionable?
 """).upper()
                 match answer:
-                    case "YES":
-                        print("Put this task in the backlog. It's important but not urgent. Don't worry too much about the details right now (if it's a multi or single step task etc)")
-                        print(task)
-                        exit()
                     case "NO":
-                        answer = input("""Is it really that important or can we please trash it right now?
+                        answer = input("""Can you delegate this task and let someone else develop/incubate it?
 """).upper()
                         match answer:
                             case "YES":
-                                print("Awesome! Let's trash this task:")
+                                print("Great! Put this task in the backlog and label it delegate and that it needs incubating (or something more descriptive if you can). It's important (apparently), so don't trash it, but it's not urgent. Let someone else worry about the details.")
                                 print(task)
                                 exit()
                             case "NO":
-                                print("This is apparently important. But it's not urgent and it's not actionable at the moment.")
-                                print("Then this task is one of two things:")
-                                print("1. A documentation task. Something that should be documented or shared in some form or just should be available for reference later. If that's the case, then add a docs/sharing/etc TODO in the backlog.")
-                                print("2. Alternatively, this needs further incubation to be useful. If so, then add an incubation TODO in the backlog.")
-                                print("3. There's no third option. Just trash this thing and focus on something important instead!")
-                                print("")
-                                print("The task at hand:")
+                                print("Do yourself a favour and ask yourself if this really is worth cluttering your backlog (since it's not actionable at the moment and not urgent). If the answer is yes, then put this task in the backlog and describe it as incubating or something more descriptive if you can. Don't worry too much about the details right now (if it's a multi or single step task etc).")
+                                print("Perhaps this is a documentation task? Something to keep for reference? Then put it somewhere where whoever needs the information can access it and stop it from cluttering your backlog.")
                                 print(task)
+                                exit()
+                    case "YES":
+                        print("Put this task in the backlog and describe the task at hand in broad terms. It's important (so don't trash it) but it's not urgent. Don't worry too much about the details right now (if it's a multi or single step task etc)")
+                        print(task)
+                        exit()
