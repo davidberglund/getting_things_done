@@ -111,7 +111,7 @@ match answer:
                                         print(task)
                                         exit()
                             case "NO":
-                                answer = input("""Is this a documentation task or something that should be available for reference in the future? Perhaps a blog post or presentation?")
+                                answer = input("""Is this a documentation task or something that should be available for reference in the future? Perhaps a blog post or presentation?
 """).upper()
                                 match answer:
                                     case "YES":
@@ -127,7 +127,7 @@ match answer:
                                                 print(task)
                                                 exit()
                                     case "NO":
-                                        answer = input("""Are you sure this is worth your time? Trash it?
+                                        answer = input("""This is probably not worth your time... Trash it?
 """).upper()
                                         match answer:
                                             case "YES":
