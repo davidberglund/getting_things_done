@@ -1,0 +1,80 @@
+Krav på organisationer idag:
+Leverera tjänster som tillfredställer användarnas behov
+Hög verksamhetsförståelse
+Förutse förändringar av riktlinjer och lagar som påverkar systemen
+Svara effektivt på upptäckta sårbarheter, säkerhetsrisker eller förändringar i samhället.
+
+DevOps, en definition:
+“En organisatorisk och kulturell rörelse
+som ska hjälpa till att
+leverera mjukvara oftare,
+förbättra tillgängligheten och pålitligheten för tjänster,
+och att bygga 
+ett delat ägarskap emellan intressenter.
+För att lyckas med det behöver utvecklare och drifttekniker fokusera på mindre komponenter
+och mindre överlämningar.”
+
+Målet är..
+Delat ägarskap,
+mindre komponenter,
+korta utvecklingslivscykler, hög driftsättningsfrekvens, 
+mindre överlämningar och
+möjliggörandet av snabb återställning vid fel 
+leder till färre fel vid förändringar (change) och
+högre tillgänglighet och pålitlighet för tjänster.
+
+
+[Transformational leadership] --> [Lean product management]
+[Transformational leadership] --> [Technical practices]
+[Software delivery performance] <--> [Lean product management]
+[Lean product management] --> [Organizational performance] 
+[Software delivery performance] --> [Organizational performance] 
+[Technical practices] --> [Continuous delivery]
+[Continuous delivery] --> [Less deployment pain]
+[Continuous delivery] --> [Software delivery performance]
+
+<Transformational leadership>
+Personal recognition
+Supportive leadership
+Intellectual stimulation
+Inspirational communication
+Vision
+
+<Lean product management>
+Team experimentation
+Working in small batches
+Gathering and implementing customer feedback
+
+<Technical practices>
+Continuous integration
+Deployment automation
+Loosely coupled architecture
+Empowered teams
+Test automation
+Trunk based development
+Shifting left on security
+
+
+Tactical leadership in tech: "Lead by making it easy for others to follow"
+
+<Motivation>
+Daniel Pink (Dan Pink https://www.youtube.com/watch?v=rrkrvAUbU9Y&ab_channel=TED)
+< Purpose - Mastery - Autonomy = Drive >
+Purpose + Mastery = Discipline
+Mastery + Autonomy = Dedication
+Purpose + Autonomy = Desire 
+
+< Syfte + Briljans + Självständighet = Driv >
+Syfte + Briljans = Disciplin
+Briljans + Självständighet = Engagemang
+Syfte + Självständighet = Aptit
+
+Syfte + Behärska + Självständig = Driv
+Syfte + Briljans = Disciplin
+Briljans + Självständighet = Engagemang
+Syfte + Självständighet = Aptit
+
+ROWE: Results ONLY Work Environment
+- möten är valfritt, visa resultatmotivation
+
+
