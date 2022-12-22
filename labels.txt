@@ -1,1 +1,15 @@
-Alla valbara labels och en beskrivning till dem
+Alla valbara labels och en beskrivning till dem:
+
+backlog-action - actionable tasks, important but not urgent
+
+todo-action - important _and_ urgent, actionable. Needs additional labels: single or multistep, delegate or assignee/davidberglund
+
+todo-ref - important, urgent, complete for reference (specify for whome): document, write blog post, create other content 
+
+doing - ongoing task
+
+done - completed task
+
+
+Exempel på ytterligare labels, inspirerade av GitHub open source projekt, som kan användas:
+labels: Epic, area/community, area/dependency, area/deployment, area/documentation, area/infra, area/internalapplication, area/logging, area/metrics, area/monitoring, area/operational, area/testing, area/tooling, area/webapplication, blocked, blocked/needs-decision, blocked/needs-design, blocked/needs-info, column/todo, help, help-wanted, kind/bug, kind/cleanup, kind/decision, kind/deprecation, kind/design, kind/feature, kind/question, known-issue, lifecycle/accepted, lifecycle/frozen, lifecycle/investigating, lifecycle/needs-triage, lifecycle/stale, needsGrooming, performance, pm3/objekt-blargh, priority/awaiting-more-evidence, priority/backlog, priority/critical-urgent, priority/important-longterm, priority/important-soon, resolved, wanted
