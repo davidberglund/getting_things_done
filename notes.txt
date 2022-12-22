@@ -148,3 +148,68 @@ ROWE: Results ONLY Work Environment
 - möten är valfritt, visa resultatmotivation
 
 
+
+<SRE>
+What makes SRE, SRE? (Google)
+- Hire only coders
+- Have an SLA for your service
+- Measure and report performance against SLA
+- Use error budgets and gate launches on them
+- Common staffing pool for SRE and DEV
+- Excess Ops work overflows to DEV team
+- Cap SRE operational load at 50%
+- Share 5% of ops work with DEV team
+- Oncall teams at least 8 people, or 6x2
+- Maximum of 2 events per oncall shift
+- Post mortem for every event
+- Post mortems are blameless and focus on process and technology, not people
+
+
+Reliability 99s:
+
+Rel. level: 90% 
+Per year: 36.5 days
+Per quarter: 9 days
+Per 30 days: 3 days
+
+
+Rel. level: 95% 
+Per year: 18.25 days
+Per quarter: 4.5 days
+Per 30 days: 1.5 days
+
+
+Rel. level: 99% 
+Per year: 3.65 days
+Per quarter: 21.6 hours
+Per 30 days: 7.2 hours
+
+
+Rel. level: 99.5% 
+Per year: 1.83 days
+Per quarter: 10.8 hours
+Per 30 days: 3.6 hours
+
+
+Rel. level: 99.9% 
+Per year: 8.76 hours
+Per quarter: 2.16 hours
+Per 30 days: 43.2 minutes
+
+
+Rel. level: 99.95% 
+Per year: 4.38 hours
+Per quarter: 1.08 hours
+Per 30 days: 21.6 minutes
+
+
+Rel. level: 99.99% 
+Per year: 52.6 minutes
+Per quarter: 12.96 minutes
+Per 30 days: 4.32 minutes
+
+
+Rel. level: 99.999% 
+Per year: 5.26 minutes
+Per quarter: 1.30 minutes
+Per 30 days: 25.9 seconds
