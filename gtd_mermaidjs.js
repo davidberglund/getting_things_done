@@ -12,7 +12,7 @@ graph TD
 
     ImportantYes -->|Yes| ImportantYesUrgentYes[Yes, it's urgent. Actionable?]
     ImportantYesUrgentYes -->|Yes| ImportantYesUrgentYesActionableYes[Yes. Single step task?]
-    ImportantYesUrgentYes -->|No| ImportantYesUrgentYesActionableNo[No. ]
+    ImportantYesUrgentYes -->|No| ImportantYesUrgentYesActionableNo[No. Delegate?]
     ImportantYesUrgentYesActionableYes -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskYes[Yes. Done in 2 min?]
     ImportantYesUrgentYesActionableYes -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskNo[No. Break this task down into actionable steps. Do that now?]
     ImportantYesUrgentYesActionableYesSingleStepTaskYes -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2Mins[Yes. Do it now]
