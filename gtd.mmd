@@ -10,10 +10,10 @@ graph TD
     ImportantYesUrgent -->|No| ImportantYesUrgentNoActionable[Actionable?]
     ImportantYesUrgent -->|Yes| ImportantYesUrgentYesActionable[Actionable?]
 
-    ImportantYesUrgentNoActionable -->|Yes| ImportantYesUrgentNoActionableYes[Add to backlog. Don't trash it but don't worry about the details - i.e. multi or single step task etc.]
+    ImportantYesUrgentNoActionable -->|Yes| ImportantYesUrgentNoActionableYes[Add to backlog. Don't trash it but don't worry about the details.]
     ImportantYesUrgentNoActionable -->|No| ImportantYesUrgentNoActionableNoDelegate[Delegate and let someone else develop/incubate it?]
     ImportantYesUrgentNoActionableNoDelegate -->|No| ImportantYesUrgentNoActionableNoDelegateNo[Is this something to keep for reference - docs, a blog post, reading etc? It's not urgent so put away with a proper label.]
-    ImportantYesUrgentNoActionableNoDelegate -->|Yes| ImportantYesUrgentNoActionableNoDelegateYes[Delegate for someone else to inbubate/develop]
+    ImportantYesUrgentNoActionableNoDelegate -->|Yes| ImportantYesUrgentNoActionableNoDelegateYes[Delegate for someone else to inbubate/develop.]
 
     ImportantYesUrgentYesActionable -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTask[Single step task?]
     ImportantYesUrgentYesActionable -->|No| ImportantYesUrgentYesActionableNoIncubate[Incubate?]
@@ -24,7 +24,7 @@ graph TD
     ImportantYesUrgentYesActionableYesSingleStepTaskNoIncubateNow -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskNoIncubateNowNo[No. Add a TODO ASAP to break this task down into actionable steps.]
 
     ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2Mins -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2MinsYes[Do it now!]
-    ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2Mins -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2MinsNo[Add to TODO ASAP]
+    ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2Mins -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2MinsNo[Add to TODO ASAP.]
 
     ImportantYesUrgentYesActionableNoIncubate -->|Yes| ImportantYesUrgentYesActionableNoIncubateYes[Add TODO ASAP to incubate/develop this idea further.]
     ImportantYesUrgentYesActionableNoIncubate -->|No| ImportantYesUrgentYesActionableNoIncubateNoDelegate[Delegate?]
