@@ -14,7 +14,7 @@ graph TD
     ImportantYesUrgentYes -->|Yes| ImportantYesUrgentYesActionableYes[Yes. Single step task?]
     ImportantYesUrgentYes -->|No| ImportantYesUrgentYesActionableNo[No. ]
     ImportantYesUrgentYesActionableYes -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskYes[Yes. Done in 2 min?]
-    ImportantYesUrgentYesActionableYes -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskNo[No.]
+    ImportantYesUrgentYesActionableYes -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskNo[No. Break this task down into actionable steps. Do that now?]
     ImportantYesUrgentYesActionableYesSingleStepTaskYes -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskYesDoneIn2Mins[Yes. Do it now]
     ImportantYesUrgentYesActionableYesSingleStepTaskYes -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskYesNotDoneIn2Mins[No. Delegate to someone else?]
     ImportantYesUrgentYesActionableYesSingleStepTaskYesNotDoneIn2Mins -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskYesNotDoneIn2MinsDelegateNo[No. Do it yourself?]
@@ -32,3 +32,6 @@ graph TD
     ImportantYesUrgentYesActionableNoDelegateNo -->|No| ImportantYesUrgentYesActionableNoDelegateNoIncubateNo[No. Is this a documentation task or something that should be available for reference in the future? Perhaps a blog post or presentation?]
     ImportantYesUrgentYesActionableNoDelegateNoIncubateNo -->|No| ImportantYesUrgentYesActionableNoDelegateNoIncubateNoForReferenceNo[No. Probably not worth your time? Or delegate or put somewhere to be handled at a later date.]
     ImportantYesUrgentYesActionableNoDelegateNoIncubateNo -->|No| ImportantYesUrgentYesActionableNoDelegateNoIncubateNoForReferenceYes[Yes. Start documenting, blogging or put wherever this needs to be for future reference.]
+
+    ImportantYesUrgentYesActionableYesSingleStepTaskNo -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTaskNoIncubateNowYes[Yes. Have fun breaking this task down into actionable steps!]
+    ImportantYesUrgentYesActionableYesSingleStepTaskNo -->|No| ImportantYesUrgentYesActionableYesSingleStepTaskNoIncubateNowNo[No. Add a TODO ASAP to break this task down into actionable steps.]
