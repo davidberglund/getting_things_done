@@ -106,4 +106,5 @@ def userLoop():
                     userAnswers['delegate'] = False
             case None:
                 break
-userLoop()
+if __name__ == "__main__":
+    userLoop()
