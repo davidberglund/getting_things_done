@@ -12,7 +12,7 @@ graph TD
 
     ImportantYesUrgentNoActionable -->|Yes| ImportantYesUrgentNoActionableYes[Add to backlog but don't worry about the details.]
     ImportantYesUrgentNoActionable -->|No| ImportantYesUrgentNoActionableNoDelegate[Delegate and let someone else develop/incubate it?]
-    ImportantYesUrgentNoActionableNoDelegate -->|No| ImportantYesUrgentNoActionableNoDelegateNo[Is this only for ref? Docs, a blog post, reading etc? Add to backlog with a proper label.]
+    ImportantYesUrgentNoActionableNoDelegate -->|No| ImportantYesUrgentNoActionableNoDelegateNo[Just keep for ref or docs, a blog post, reading etc? Add to backlog with proper label.]
     ImportantYesUrgentNoActionableNoDelegate -->|Yes| ImportantYesUrgentNoActionableNoDelegateYes[Delegate for someone else to inbubate/develop.]
 
     ImportantYesUrgentYesActionable -->|Yes| ImportantYesUrgentYesActionableYesSingleStepTask[Single step task?]
@@ -30,4 +30,4 @@ graph TD
     ImportantYesUrgentYesActionableNoIncubate -->|No| ImportantYesUrgentYesActionableNoIncubateNoDelegate[Delegate?]
 
     ImportantYesUrgentYesActionableNoIncubateNoDelegate -->|Yes| ImportantYesUrgentYesActionableNoIncubateNoDelegateYes[Delegate for someone else to inbubate/develop/define.] 
-    ImportantYesUrgentYesActionableNoIncubateNoDelegate -->|No| ImportantYesUrgentYesActionableNoIncubateNoDelegateNo[Is this only for ref? Docs, a blog post, reading etc? Define and add to TODO ASAP.]
+    ImportantYesUrgentYesActionableNoIncubateNoDelegate -->|No| ImportantYesUrgentYesActionableNoIncubateNoDelegateNo[Just keep for ref or docs, a blog post, reading etc? Define and add to TODO ASAP.]
