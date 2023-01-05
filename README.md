@@ -1,5 +1,5 @@
 ````mermaid
-graph TD
+flowchart LR
     Important[Important?]
 
     Important -->|No| ImportantNoUrgent[Urgent?]
