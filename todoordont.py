@@ -57,13 +57,7 @@ def checkUserAnswer(userAnswers):
                     if userAnswers.get("delegate") == False:
                         print ("Incubate now or add to TODO for incubation.")
                         return None
-#print ("start by setting important and urgent value in userAnswers from user input")
-#userAnswers = delegateIncubate
-#print (userAnswers.important == notActionable.important)
 def userLoop():
-    #instead of calling checkUserAnswer() directly,
-    #call checkUserAnswer(userAnswers) in a loop from this function
-    #and have checkUserAnswer() return for needed info until completed
     userAnswers = {}
     while True:
         checkUserAnswer_status = checkUserAnswer(userAnswers)
