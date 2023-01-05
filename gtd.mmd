@@ -10,7 +10,7 @@ graph TD
     ImportantYesUrgent -->|No| ImportantYesUrgentNoActionable[Actionable?]
     ImportantYesUrgent -->|Yes| ImportantYesUrgentYesActionable[Actionable?]
 
-    ImportantYesUrgentNoActionable -->|Yes| ImportantYesUrgentNoActionableYes[Add to backlog. Don't trash it but don't worry about the details.]
+    ImportantYesUrgentNoActionable -->|Yes| ImportantYesUrgentNoActionableYes[Add to backlog but don't worry about the details.]
     ImportantYesUrgentNoActionable -->|No| ImportantYesUrgentNoActionableNoDelegate[Delegate and let someone else develop/incubate it?]
     ImportantYesUrgentNoActionableNoDelegate -->|No| ImportantYesUrgentNoActionableNoDelegateNo[Is this only for ref? Docs, a blog post, reading etc? Add to backlog with a proper label.]
     ImportantYesUrgentNoActionableNoDelegate -->|Yes| ImportantYesUrgentNoActionableNoDelegateYes[Delegate for someone else to inbubate/develop.]
