@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <p>Important?</p>
+    <div id="important_answer"></div>
+    <button py-click="importantYes()" id="important_yes">Yes</button>
+    <button py-click="importantNo()" id="important_no">No</button>
+    <p>Urgent?</p>
+    <div id="urgent_answer"></div>
+    <button py-click="urgentYes()" id="urgent_yes">Yes</button>
+    <button py-click="urgentNo()" id="urgent_no">No</button>
+    <p>Actionable?</p>
+    <div id="actionable_answer"></div>
+    <button py-click="actionableYes()" id="actionable_yes">Yes</button>
+    <button py-click="actionableNo()" id="actionable_no">No</button>
+    <p>Just keep for reference or write docs, a blog post, reading etc?</p>
+    <div id="forReference_answer"></div>
+    <button py-click="forReferenceYes()" id="forReference_yes">Yes</button>
+    <button py-click="forReferenceNo()" id="forReference_no">No</button>
+    <p>Single step task?</p>
+    <div id="singleStepTask_answer"></div>
+    <button py-click="singleStepTaskYes()" id="singleStepTask_yes">Yes</button>
+    <button py-click="singleStepTaskNo()" id="singleStepTask_no">No</button>
+    <br><br>
+    <button py-click="submit()" id="submit">Check answer</button>
+    <div id="computer_says"></div>
+
+    <py-script>
+    userAnswers = {}
+    computer_says = Element("computer_says")
+
+    def importantYes():
+        manual_div = Element("important_answer")
+        manual_div.element.innerHTML = "<p>Yes</p>"
+        userAnswers['important'] = True
+    def importantNo():
+        manual_div = Element("important_answer")
+        manual_div.element.innerHTML = "<p>No</p>"
+        userAnswers['important'] = False
+    def urgentYes():
+        manual_div = Element("urgent_answer")
+        manual_div.element.innerHTML = "<p>Yes</p>"
+        userAnswers['urgent'] = True
+    def urgentNo():
+        manual_div = Element("urgent_answer")
+        manual_div.element.innerHTML = "<p>No</p>"
+        userAnswers['urgent'] = False
+    def actionableYes():
+        manual_div = Element("actionable_answer")
+        manual_div.element.innerHTML = "<p>Yes</p>"
+        userAnswers['actionable'] = True
+    def actionableNo():
+        manual_div = Element("actionable_answer")
+        manual_div.element.innerHTML = "<p>No</p>"
+        userAnswers['actionable'] = False
+    def forReferenceYes():
+        manual_div = Element("forReference_answer")
+        manual_div.element.innerHTML = "<p>Yes</p>"
+        userAnswers['forReference'] = True
+    def forReferenceNo():
+        manual_div = Element("forReference_answer")
+        manual_div.element.innerHTML = "<p>No</p>"
+        userAnswers['forReference'] = False
+
+    def singleStepTaskYes():
+        manual_div = Element("singleStepTask_answer")
+        manual_div.element.innerHTML = "<p>Yes</p>"
+        userAnswers['singleStepTask'] = True
+    def singleStepTaskNo():
+        manual_div = Element("singleStepTask_answer")
+        manual_div.element.innerHTML = "<p>No</p>"
+        userAnswers['singleStepTask'] = False
+
+    def submit():
+        checkUserAnswer(userAnswers)
+
+    def checkUserAnswer(userAnswers):
+        if userAnswers.get("important") == False:
+            if userAnswers.get("urgent") == False:
+                computer_says.element.innerHTML = "<p>Trash it!</p>"
+            if userAnswers.get("urgent") == True:
+                computer_says.element.innerHTML = "<p>Delegate? Or add to backlog of less important TODO's</p>"
+        if userAnswers.get("important") == True:
+            if userAnswers.get("urgent") == False:
+                if userAnswers.get("actionable") == False:
+                    computer_says.element.innerHTML = "<p>Delegate for incubation.</p>"
+                if userAnswers.get("actionable") == True:
+                    computer_says.element.innerHTML = "<p>Add to backlog.</p>"
+            if userAnswers.get("urgent") == True:
+                if "actionable" in userAnswers:
+                    if userAnswers.get("actionable") == True:
+                        if "forReference" in userAnswers:
+                            if userAnswers.get("forReference") == True:
+                                computer_says.element.innerHTML = "<p>Put this where it can be referenced or produce the docs/blog post etc. Right now or add to TODO ASAP.</p>"
+                        if "singleStepTask" in userAnswers:
+                            if "forReference" in userAnswers:
+                                if userAnswers.get("forReference") == True:
+                                    if userAnswers.get("singleStepTask") == False:
+                                        computer_says.element.innerHTML = "<p>Sounds like a project? Perhaps for writing docs/a blog post or to create other reference material/content? Define the end goal and each step to get there, then start working. Add to TODO ASAP.</p>"
+                                    if userAnswers.get("singleStepTask") == True:
+                                        computer_says.element.innerHTML = "<p>Done in 2 mins? Do it now! Otherwise add to TODO ASAP.</p>"
+                            if userAnswers.get("singleStepTask") == False:
+                                computer_says.element.innerHTML = "<p>Sounds like a project. Define the goal and each step to get there. Do this work now or add to TODO ASAP.</p>"
+                            if userAnswers.get("singleStepTask") == True:
+                                computer_says.element.innerHTML = "<p>Done in 2 mins? Do it now! Otherwise add to TODO ASAP.</p>"
+                    if userAnswers.get("actionable") == False:
+                        if "forReference" in userAnswers:
+                            if "singleStepTask" in userAnswers:
+                                if userAnswers.get("singleStepTask") == False:
+                                    if userAnswers.get("forReference") == True:
+                                        computer_says.element.innerHTML = "<p>Sounds like this might be a vaguely defined project? Define each step and what the goal is. Perhaps the end result is supposed to be docs/a blog post or similar?</p>"
+                                    if userAnswers.get("forReference") == False:
+                                        computer_says.element.innerHTML = "<p>Is this a project? Define the goal and each step to get there. Incubate now or add to TODO for incubation. (Or delegate for incubation.)</p>"
+                                if userAnswers.get("singleStepTask") == True:
+                                    if userAnswers.get("forReference") == True:
+                                        computer_says.element.innerHTML = "<p>Incubate/define this task ASAP or add for to TODO ASAP. Is this docs/blog post to be written or something to read?</p>"
+                                    if userAnswers.get("forReference") == False:
+                                        computer_says.element.innerHTML = "<p>Incubate now or add to TODO for incubation. Or delegate for incubation.</p>"
+    </py-script>
+  </body>
+</html>
