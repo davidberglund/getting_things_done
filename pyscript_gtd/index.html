@@ -16,10 +16,6 @@
     <div id="actionable_answer"></div>
     <button py-click="actionableYes()" id="actionable_yes">Yes</button>
     <button py-click="actionableNo()" id="actionable_no">No</button>
-    <p>Just keep for reference or write docs, a blog post, reading etc?</p>
-    <div id="forReference_answer"></div>
-    <button py-click="forReferenceYes()" id="forReference_yes">Yes</button>
-    <button py-click="forReferenceNo()" id="forReference_no">No</button>
     <p>Single step task?</p>
     <div id="singleStepTask_answer"></div>
     <button py-click="singleStepTaskYes()" id="singleStepTask_yes">Yes</button>
@@ -56,14 +52,6 @@
         manual_div = Element("actionable_answer")
         manual_div.element.innerHTML = "<p>No</p>"
         userAnswers['actionable'] = False
-    def forReferenceYes():
-        manual_div = Element("forReference_answer")
-        manual_div.element.innerHTML = "<p>Yes</p>"
-        userAnswers['forReference'] = True
-    def forReferenceNo():
-        manual_div = Element("forReference_answer")
-        manual_div.element.innerHTML = "<p>No</p>"
-        userAnswers['forReference'] = False
 
     def singleStepTaskYes():
         manual_div = Element("singleStepTask_answer")
@@ -86,39 +74,23 @@
         if userAnswers.get("important") == True:
             if userAnswers.get("urgent") == False:
                 if userAnswers.get("actionable") == False:
-                    computer_says.element.innerHTML = "<p>Delegate for incubation.</p>"
+                    computer_says.element.innerHTML = "<p>Add to backlog for incubation. Or delegate for incubation.</p>"
                 if userAnswers.get("actionable") == True:
                     computer_says.element.innerHTML = "<p>Add to backlog.</p>"
             if userAnswers.get("urgent") == True:
                 if "actionable" in userAnswers:
                     if userAnswers.get("actionable") == True:
-                        if "forReference" in userAnswers:
-                            if userAnswers.get("forReference") == True:
-                                computer_says.element.innerHTML = "<p>Put this where it can be referenced or produce the docs/blog post etc. Right now or add to TODO ASAP.</p>"
                         if "singleStepTask" in userAnswers:
-                            if "forReference" in userAnswers:
-                                if userAnswers.get("forReference") == True:
-                                    if userAnswers.get("singleStepTask") == False:
-                                        computer_says.element.innerHTML = "<p>Sounds like a project? Perhaps for writing docs/a blog post or to create other reference material/content? Define the end goal and each step to get there, then start working. Add to TODO ASAP.</p>"
-                                    if userAnswers.get("singleStepTask") == True:
-                                        computer_says.element.innerHTML = "<p>Done in 2 mins? Do it now! Otherwise add to TODO ASAP.</p>"
                             if userAnswers.get("singleStepTask") == False:
                                 computer_says.element.innerHTML = "<p>Sounds like a project. Define the goal and each step to get there. Do this work now or add to TODO ASAP.</p>"
                             if userAnswers.get("singleStepTask") == True:
                                 computer_says.element.innerHTML = "<p>Done in 2 mins? Do it now! Otherwise add to TODO ASAP.</p>"
                     if userAnswers.get("actionable") == False:
-                        if "forReference" in userAnswers:
-                            if "singleStepTask" in userAnswers:
-                                if userAnswers.get("singleStepTask") == False:
-                                    if userAnswers.get("forReference") == True:
-                                        computer_says.element.innerHTML = "<p>Sounds like this might be a vaguely defined project? Define each step and what the goal is. Perhaps the end result is supposed to be docs/a blog post or similar?</p>"
-                                    if userAnswers.get("forReference") == False:
-                                        computer_says.element.innerHTML = "<p>Is this a project? Define the goal and each step to get there. Incubate now or add to TODO for incubation. (Or delegate for incubation.)</p>"
-                                if userAnswers.get("singleStepTask") == True:
-                                    if userAnswers.get("forReference") == True:
-                                        computer_says.element.innerHTML = "<p>Incubate/define this task ASAP or add for to TODO ASAP. Is this docs/blog post to be written or something to read?</p>"
-                                    if userAnswers.get("forReference") == False:
-                                        computer_says.element.innerHTML = "<p>Incubate now or add to TODO for incubation. Or delegate for incubation.</p>"
+                        if "singleStepTask" in userAnswers:
+                            if userAnswers.get("singleStepTask") == False:
+                                computer_says.element.innerHTML = "<p>Is this a project? Define the goal and each step to get there. Incubate now or add to TODO for incubation. (Or delegate for incubation.)</p>"
+                            if userAnswers.get("singleStepTask") == True:
+                                computer_says.element.innerHTML = "<p>Incubate now or add to TODO for incubation. Or delegate for incubation.</p>"
     </py-script>
   </body>
 </html>
