@@ -70,13 +70,13 @@
             if userAnswers.get("urgent") == False:
                 computer_says.element.innerHTML = "<p>Trash it!</p>"
             if userAnswers.get("urgent") == True:
-                computer_says.element.innerHTML = "<p>Delegate? Or add to backlog of less important TODO's</p>"
+                computer_says.element.innerHTML = "<p>Add to backlog of less important TODO's (or delegate)</p>"
         if userAnswers.get("important") == True:
             if userAnswers.get("urgent") == False:
                 if userAnswers.get("actionable") == False:
-                    computer_says.element.innerHTML = "<p>Add to backlog for incubation. Or delegate for incubation.</p>"
+                    computer_says.element.innerHTML = "<p>Schedule/Add to backlog for incubation. Or delegate for incubation.</p>"
                 if userAnswers.get("actionable") == True:
-                    computer_says.element.innerHTML = "<p>Add to backlog.</p>"
+                    computer_says.element.innerHTML = "<p>Schedule/Add to backlog.</p>"
             if userAnswers.get("urgent") == True:
                 if "actionable" in userAnswers:
                     if userAnswers.get("actionable") == True:
